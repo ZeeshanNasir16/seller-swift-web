@@ -1,3 +1,4 @@
+import MainLayout from '@/components/global/main-layout';
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import './globals.css';
@@ -80,7 +81,7 @@ export default function RootLayout({
       <body
         className={`${monaSans.variable} ${monaSansExpanded.variable} antialiased relative`}
       >
-        {children}
+        <MainLayout>{children}</MainLayout>
       </body>
     </html>
   );
