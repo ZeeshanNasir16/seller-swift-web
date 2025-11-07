@@ -13,7 +13,7 @@ import PrimaryHorizontalSeperator from './primary-horizontal-seperator';
 
 const Footer = () => {
   return (
-    <footer className='relative z-20 pb-8 md:pb-12  text-white overflow-y-visible backdrop-blur-md'>
+    <footer className='relative z-20 pb-8 md:pb-12  text-white overflow-y-visible overflow-x-hidden backdrop-blur-md'>
       <div className='absolute inset-[0%_-10%_0%_-10%] overflow-visible z-[15]'>
         <FooterGradientbg />
       </div>
