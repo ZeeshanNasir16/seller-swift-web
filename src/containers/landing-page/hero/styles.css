@@ -1,0 +1,13 @@
+.centered-round-eclipse {
+    z-index: 12;
+    background: radial-gradient(circle, hsl(var(--secondary)) 0%, transparent 100%);
+    position: absolute;
+    inset: 0;
+}
+
+.round-eclipse-overlay {
+    z-index: 15;
+    background: linear-gradient(180deg, rgba(0, 1, 2, 0.00)0%, #010000);
+    position: absolute;
+    inset: 0;
+}
