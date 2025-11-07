@@ -16,7 +16,7 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
       )}
     >
       <Navbar />
-      <main className='min-h-dvh z-20'>{children}</main>
+      <main className='min-h-dvh z-20 overflow-x-hidden'>{children}</main>
       <Footer />
     </div>
   );
