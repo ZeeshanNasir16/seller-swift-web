@@ -1,0 +1,28 @@
+At line:1 char:199
++ ... s | Where-Object { ../...Name -eq 'document.xml' };  = .Open();  = Ne ...
++                                                                  ~
+An expression was expected after '('.
+At line:1 char:239
++ ... ent.xml' };  = .Open();  = New-Object System.IO.StreamReader();  = .R ...
++                                                                  ~
+An expression was expected after '('.
+At line:1 char:256
++ ... pen();  = New-Object System.IO.StreamReader();  = .ReadToEnd(); .Clos ...
++                                                                  ~
+An expression was expected after '('.
+At line:1 char:266
++ ... New-Object System.IO.StreamReader();  = .ReadToEnd(); .Close(); .Clos ...
++                                                                  ~
+An expression was expected after '('.
+At line:1 char:276
++ ...  System.IO.StreamReader();  = .ReadToEnd(); .Close(); .Close(); .Disp ...
++                                                                  ~
+An expression was expected after '('.
+At line:1 char:288
++ ... treamReader();  = .ReadToEnd(); .Close(); .Close(); .Dispose(); Write ...
++                                                                  ~
+An expression was expected after '('.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordEx 
+   ception
+    + FullyQualifiedErrorId : ExpectedExpression
+ 

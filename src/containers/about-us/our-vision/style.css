@@ -1,0 +1,27 @@
+.hero {
+    position: relative;
+    height: 400px;
+    background: #000;
+    /* bottom black part */
+    overflow: hidden;
+    /* hide most of the circle */
+}
+
+/* The big curved shape */
+.hero .curve {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 200%;
+    /* make it huge so it looks like an arc */
+    height: 200%;
+    transform: translateX(-50%) translateY(40%);
+    /* push it down */
+    border-radius: 50%;
+    /* make it a circle/ellipse */
+
+    /* main purple → black gradient on the circle */
+    background:
+        radial-gradient(circle at 70% 10%, #d86cff 0, #9f45ff 25%, transparent 55%),
+        radial-gradient(circle at 20% 0%, #b052ff 0, #6121b8 35%, #13001f 70%, #000 100%);
+}

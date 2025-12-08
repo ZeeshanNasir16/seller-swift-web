@@ -1,0 +1,142 @@
+export const FooterGradientbg = () => {
+  return (
+    <svg
+      width='100%'
+      height='100%'
+      viewBox='0 0 3224 1601'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+    >
+      <g filter='url(#filter0_f_2163_807)'>
+        <path
+          d='M2924 1300.21C2924 1168.86 2890.06 1038.8 2824.13 917.445C2758.2 796.094 2661.55 685.832 2539.72 592.954C2417.89 500.076 2273.26 426.401 2114.08 376.136C1954.9 325.871 1784.29 300 1612 300C1439.71 300 1269.1 325.871 1109.92 376.136C950.74 426.401 806.106 500.076 684.276 592.954C562.445 685.832 465.804 796.094 399.87 917.445C333.936 1038.8 300 1168.86 300 1300.21L1612 1300.21H2924Z'
+          fill='url(#paint0_radial_2163_807)'
+        />
+      </g>
+      <defs>
+        <filter
+          id='filter0_f_2163_807'
+          x='0'
+          y='0'
+          width='3224'
+          height='1600.21'
+          filterUnits='userSpaceOnUse'
+          color-interpolation-filters='sRGB'
+        >
+          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feBlend
+            mode='normal'
+            in='SourceGraphic'
+            in2='BackgroundImageFix'
+            result='shape'
+          />
+          <feGaussianBlur
+            stdDeviation='150'
+            result='effect1_foregroundBlur_2163_807'
+          />
+        </filter>
+        <radialGradient
+          id='paint0_radial_2163_807'
+          cx='0'
+          cy='0'
+          r='1'
+          gradientTransform='matrix(273.974 974.13 -1198.38 79.5314 933.734 52.2617)'
+          gradientUnits='userSpaceOnUse'
+        >
+          <stop stop-color='#9D4EDD' />
+          <stop offset='0.326769' stop-color='#9D4EDD' />
+          <stop offset='1' />
+        </radialGradient>
+      </defs>
+    </svg>
+
+    // <svg
+    //   width='2640'
+    //   height='1226'
+    //   viewBox='0 0 1440 1226'
+    //   fill='none'
+    //   xmlns='http://www.w3.org/2000/svg'
+    // >
+    //   <g filter='url(#filter0_f_2162_806)'>
+    //     <path
+    //       d='M2018.46 1300.21C2018.46 1168.86 1984.52 1038.8 1918.59 917.445C1852.66 796.094 1756.02 685.832 1634.19 592.954C1512.35 500.076 1367.72 426.401 1208.54 376.136C1049.36 325.871 878.755 300 706.461 300C534.167 300 363.559 325.871 204.38 376.136C45.201 426.401 -99.4328 500.076 -221.263 592.954C-343.094 685.832 -439.735 796.094 -505.669 917.445C-571.603 1038.8 -605.539 1168.86 -605.539 1300.21L706.461 1300.21H2018.46Z'
+    //       fill='url(#paint0_radial_2162_806)'
+    //     />
+    //   </g>
+    //   <g filter='url(#filter1_f_2162_806)'>
+    //     <path
+    //       d='M2018.46 1300.21C2018.46 1168.86 1984.53 1038.8 1918.59 917.445C1852.66 796.094 1756.02 685.832 1634.19 592.954C1512.35 500.076 1367.72 426.401 1208.54 376.136C1049.36 325.871 878.755 300 706.461 300C534.167 300 363.559 325.871 204.38 376.136C45.201 426.401 -99.4328 500.076 -221.263 592.954C-343.094 685.832 -439.735 796.094 -505.669 917.445C-571.603 1038.8 -605.539 1168.86 -605.539 1300.21L706.461 1300.21H2018.46Z'
+    //       fill='url(#paint1_radial_2162_806)'
+    //     />
+    //   </g>
+    //   <defs>
+    //     <filter
+    //       id='filter0_f_2162_806'
+    //       x='-905.539'
+    //       y='0'
+    //       width='3224'
+    //       height='1600.21'
+    //       filterUnits='userSpaceOnUse'
+    //       color-interpolation-filters='sRGB'
+    //     >
+    //       <feFlood flood-opacity='0' result='BackgroundImageFix' />
+    //       <feBlend
+    //         mode='normal'
+    //         in='SourceGraphic'
+    //         in2='BackgroundImageFix'
+    //         result='shape'
+    //       />
+    //       <feGaussianBlur
+    //         stdDeviation='150'
+    //         result='effect1_foregroundBlur_2162_806'
+    //       />
+    //     </filter>
+    //     <filter
+    //       id='filter1_f_2162_806'
+    //       x='-905.539'
+    //       y='0'
+    //       width='3224'
+    //       height='1600.21'
+    //       filterUnits='userSpaceOnUse'
+    //       color-interpolation-filters='sRGB'
+    //     >
+    //       <feFlood flood-opacity='0' result='BackgroundImageFix' />
+    //       <feBlend
+    //         mode='normal'
+    //         in='SourceGraphic'
+    //         in2='BackgroundImageFix'
+    //         result='shape'
+    //       />
+    //       <feGaussianBlur
+    //         stdDeviation='150'
+    //         result='effect1_foregroundBlur_2162_806'
+    //       />
+    //     </filter>
+    //     <radialGradient
+    //       id='paint0_radial_2162_806'
+    //       cx='0'
+    //       cy='0'
+    //       r='1'
+    //       gradientTransform='matrix(273.974 974.13 -1198.38 79.5314 28.1945 52.2617)'
+    //       gradientUnits='userSpaceOnUse'
+    //     >
+    //       <stop stop-color='#9D4EDD' />
+    //       <stop offset='0.326769' stop-color='#9D4EDD' />
+    //       <stop offset='1' />
+    //     </radialGradient>
+    //     <radialGradient
+    //       id='paint1_radial_2162_806'
+    //       cx='0'
+    //       cy='0'
+    //       r='1'
+    //       gradientTransform='matrix(52.1855 652.319 -770.325 -99.1974 921.872 165.33)'
+    //       gradientUnits='userSpaceOnUse'
+    //     >
+    //       <stop stop-color='#7C3DFD' />
+    //       <stop offset='0.326769' stop-color='#7C3DFD' />
+    //       <stop offset='1' stop-opacity='0' />
+    //     </radialGradient>
+    //   </defs>
+    // </svg>
+  );
+};

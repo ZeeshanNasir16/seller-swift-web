@@ -1,0 +1,66 @@
+/* Gradient replacements for gradient images */
+
+/* Replace gradient-3.png */
+.gradient-bg-3 {
+    background: radial-gradient(ellipse at center,
+            rgba(139, 92, 246, 0.25) 0%,
+            rgba(88, 28, 135, 0.15) 35%,
+            rgba(0, 0, 0, 0) 70%);
+    position: absolute;
+    inset: 0;
+    z-index: 12;
+}
+
+/* Replace gradient-4.png */
+.gradient-bg-4 {
+    background: radial-gradient(ellipse at 50% 30%,
+            rgba(139, 92, 246, 0.2) 0%,
+            rgba(88, 28, 135, 0.12) 40%,
+            rgba(0, 0, 0, 0) 75%);
+    position: absolute;
+    inset: 0;
+    z-index: 12;
+}
+
+/* Replace gradient-6.png (footer) */
+.gradient-bg-footer {
+    background: radial-gradient(ellipse at 50% 0%,
+            rgba(139, 92, 246, 0.3) 0%,
+            rgba(88, 28, 135, 0.18) 30%,
+            rgba(0, 0, 0, 0.95) 60%,
+            rgba(0, 0, 0, 1) 100%);
+    position: absolute;
+    inset: 0;
+}
+
+/* Replace centered-round-eclipse from hero */
+.hero-gradient-primary {
+    background: radial-gradient(circle at center,
+            rgba(139, 92, 246, 0.4) 0%,
+            rgba(139, 92, 246, 0.2) 30%,
+            transparent 70%);
+    position: absolute;
+    inset: 0;
+    z-index: 12;
+}
+
+/* Replace gradient overlay effects */
+.gradient-overlay-dark {
+    background: linear-gradient(180deg,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 1, 2, 0.8) 70%,
+            rgb(0, 0, 0) 100%);
+    position: absolute;
+    inset: 0;
+    z-index: 15;
+}
+
+.gradient-overlay-top {
+    background: linear-gradient(180deg,
+            rgb(0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.9) 30%,
+            rgba(0, 0, 0, 0) 100%);
+    position: absolute;
+    inset: 0;
+    z-index: 15;
+}
