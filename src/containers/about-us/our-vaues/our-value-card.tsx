@@ -6,20 +6,15 @@ const OurValuesCard = ({
   image,
   title,
   description,
-  gradientType,
 }: {
   image: string;
   title: string;
   description: string;
-  gradientType: 'light' | 'dark';
 }) => {
   return (
     <div
       className={cn(
-        'relative z-20  px-8 py-10 rounded-lg bg-gradient-to-t from-gray-950 to-primary/20 backdrop-blur-md min-h-[270px] h-auto',
-        gradientType === 'dark'
-          ? 'bg-gradient-to-t from-gray-950 to-primary/20 backdrop-blur-md'
-          : 'bg-[#EBEBF433]'
+        'relative z-20  px-8 py-10 rounded-lg bg-gradient-to-t from-gray-950 to-primary/20 backdrop-blur-md min-h-[270px] h-auto bg-[#EBEBF433] hover:bg-foreground hover:text-background transition-all duration-300'
       )}
       style={{
         boxShadow: 'rgba(0, 0, 0, 0.1) -4px 9px 25px -6px',

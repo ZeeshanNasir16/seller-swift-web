@@ -86,7 +86,7 @@ export default function RootLayout({
         <div className='bg-background text-foreground w-full'>
           <AppBgGraphics />
           <Navbar />
-          <main className='min-h-dvh z-20 w-full overflow-hidden'>
+          <main className='min-h-dvh z-20 w-full overflow-hidden relative'>
             {children}
           </main>
           <Footer />

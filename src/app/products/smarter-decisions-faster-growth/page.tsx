@@ -6,6 +6,8 @@ import Image from 'next/image';
 import React from 'react';
 
 import '@/containers/products/styles.css';
+import Link from 'next/link';
+import { app_config } from '@/config';
 
 const SmarterDecisionsFasterGrowthPage = () => {
   return (
@@ -27,9 +29,11 @@ const SmarterDecisionsFasterGrowthPage = () => {
               profit tracking, and personalized growth strategies to scale
               confidently
             </p>
-            <Button size='lg' className='w-full max-w-[450px]'>
-              Get Started Free
-            </Button>
+            <Link href={app_config.panel} className='block w-full max-w-[450px]'>
+              <Button size='lg' className='w-full'>
+                Get Started Free
+              </Button>
+            </Link>
           </div>
           <div className='hidden md:block absolute top-1/2 -right-[70%] md:-right-[350px] xl:-right-[20%] 2xl:-right-[300px] -translate-y-1/2 aspect-square z-[16] h-[80%]'>
             <Image

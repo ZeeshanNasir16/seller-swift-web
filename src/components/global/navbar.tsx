@@ -9,6 +9,7 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { cn } from '@/lib/utils';
 import { ChevronDown } from 'lucide-react';
+import Link from 'next/link';
 import React, { useState } from 'react';
 import Logo from './logo';
 import MobileNavSheet from './mobile-nav';
@@ -36,7 +37,7 @@ const Navbar = () => {
                   href='/products/smarter-decisions-faster-growth'
                   onClick={() => setIsOpen(false)}
                 >
-                  Smarter Decisions Faster Growth
+                  Advance
                 </LinkButton>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
@@ -44,7 +45,7 @@ const Navbar = () => {
                   href='/products/insights-today-funding-tommorrow'
                   onClick={() => setIsOpen(false)}
                 >
-                  Insights Today Funding Tomorrow
+                  Insights
                 </LinkButton>
               </DropdownMenuItem>
             </DropdownMenuContent>
@@ -54,7 +55,9 @@ const Navbar = () => {
           <LinkButton href='/user-agreement'>User Agreement</LinkButton>
         </div>
         <div className='flex-shrink-0 flex items-center gap-3'>
-          <Button size='sm'>Request a Demo</Button>
+          <Link href='/contact-us' className='block'>
+            <Button size='sm'>Request a Demo</Button>
+          </Link>
           <MobileNavSheet />
         </div>
       </div>

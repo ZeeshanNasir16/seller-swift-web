@@ -35,13 +35,13 @@ const MobileNavSheet = () => {
               href='/products/smarter-decisions-faster-growth'
               className='text-lg'
             >
-              Smarter Decisions Faster Growth
+              Advance
             </LinkButton>
             <LinkButton
               href='/products/insights-today-funding-tommorrow'
               className='text-lg'
             >
-              Insights Today Funding Tomorrow
+              Insights
             </LinkButton>
             <LinkButton href='/about-us' className='text-lg'>
               About Us

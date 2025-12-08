@@ -19,7 +19,7 @@ const WhyBenefitCard = ({
         'relative z-20  px-8 xl:px-10 py-10 xl:py-14 rounded-lg bg-gradient-to-t from-gray-950 to-primary/20 backdrop-blur-md min-h-[270px] ',
         gradientType === 'dark'
           ? 'bg-gradient-to-t from-gray-950 to-primary/20 backdrop-blur-md'
-          : 'bg-[#EBEBF433]'
+          : 'bg-[#EBEBF433] hover:bg-foreground hover:text-background transition-all duration-300'
       )}
       style={{
         boxShadow: 'rgba(0, 0, 0, 0.1) -4px 9px 25px -6px',

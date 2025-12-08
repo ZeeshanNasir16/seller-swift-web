@@ -4,6 +4,7 @@ export const app_config = {
   address: '',
   country: '',
   website: 'https://www.swift-seller.com',
+  panel: 'https://dev-sellerswift.bydtechnologies.com/',
   facebook: '',
   instagram: '',
   youtube: '',

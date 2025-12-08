@@ -44,7 +44,7 @@ const OurValues = () => {
                   )}
                   key={item.id}
                 >
-                  <OurValuesCard {...item} gradientType='light' />
+                  <OurValuesCard {...item}/>
                 </CarouselItem>
               ))}
             </CarouselContent>

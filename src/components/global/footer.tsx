@@ -2,7 +2,6 @@ import LinkButton from '@/components/global/link-button';
 import Logo from '@/components/global/logo';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
-import { app_config } from '@/config';
 import { CircleCheck, Mail } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -24,73 +23,16 @@ const Footer = () => {
       </div>
       <GetStartedToday />
       <PrimaryHorizontalSeperator />
-      <div className='pt-12 md:pt-24 section-max-width section-padding-x space-y-8 overflow-hidden relative z-20'>
+      <div className='pt-12 md:pt-24 section-max-width section-padding-x space-y-8 overflow-visible relative z-20'>
         <div className='grid sm:grid-cols-2 xl:grid-cols-[auto_1fr_auto] gap-x-16 gap-y-12 md:gap-y-20 items-start'>
-          <div className='space-y-16'>
-            <div className='space-y-6'>
-              <Logo withText className='h-12 md:h-14' isIcon />
-              <p className='max-w-[450px] xl:max-w-[312px] text-sm md:text-base xl:text-lg'>
-                Smarter Decisions. Faster Growth.
-              </p>
-              <Button size='lg'>Request a Demo</Button>
-            </div>
-            <div className='flex items-center gap-8'>
-              <Link href={`mailto:${app_config.facebook}`}>
-                <Image
-                  src={'/images/social/facebook.svg'}
-                  alt='facebook'
-                  width={0}
-                  height={0}
-                  sizes='100%'
-                  className='w-4 h-4 xl:w-6 xl:h-6 object-contain'
-                  loading='lazy'
-                />
-              </Link>
-              <Link href={`mailto:${app_config.instagram}`}>
-                <Image
-                  src={'/images/social/instagram.svg'}
-                  alt='instagram'
-                  width={0}
-                  height={0}
-                  sizes='100%'
-                  className='w-4 h-4 xl:w-6 xl:h-6 object-contain'
-                  loading='lazy'
-                />
-              </Link>
-              <Link href={`mailto:${app_config.linkedin}`}>
-                <Image
-                  src={'/images/social/linkedin.svg'}
-                  alt='linkedin'
-                  width={0}
-                  height={0}
-                  sizes='100%'
-                  className='w-4 h-4 xl:w-6 xl:h-6 object-contain'
-                  loading='lazy'
-                />
-              </Link>
-              <Link href={`mailto:${app_config.youtube}`}>
-                <Image
-                  src={'/images/social/youtube.svg'}
-                  alt='youtube'
-                  width={0}
-                  height={0}
-                  sizes='100%'
-                  className='w-4 h-4 xl:w-6 xl:h-6 object-contain'
-                  loading='lazy'
-                />
-              </Link>
-              <Link href={`/`}>
-                <Image
-                  src={'/images/social/tiktok.svg'}
-                  alt='tiktok'
-                  width={0}
-                  height={0}
-                  sizes='100%'
-                  className='w-4 h-4 xl:w-6 xl:h-6 object-contain'
-                  loading='lazy'
-                />
-              </Link>
-            </div>
+          <div className='space-y-6'>
+            <Logo withText className='h-12 md:h-14' isIcon />
+            <p className='max-w-[450px] xl:max-w-[312px] text-sm md:text-base xl:text-lg'>
+              Smarter Decisions. Faster Growth.
+            </p>
+            <Link href={'/contact-us'} className='block w-fit'>
+              <Button>Request a Demo</Button>
+            </Link>
           </div>
           <div className='flex flex-col sm:flex-row gap-6 md:gap-16 sm:max-w-[350px] sm:ml-auto'>
             {footerLinks.map((link) => (

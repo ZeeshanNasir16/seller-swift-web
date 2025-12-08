@@ -5,6 +5,7 @@ import { howItWorks } from '@/containers/products/how-it-works/data';
 import HowItWorksCard from '@/containers/products/how-it-works/how-it-works-card';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const InsightsTodayFindingTommorrowPage = () => {
@@ -26,9 +27,11 @@ const InsightsTodayFindingTommorrowPage = () => {
               Access working capital faster — powered by your own performance
               data and the Seller Swift ecosystem built for intelligent growth.
             </p>
-            <Button size='lg' className='w-full max-w-[450px]'>
-              Join the Waitlist
-            </Button>
+            <Link href={'/contact-us'} className='block w-full max-w-[450px]'>
+              <Button size='lg' className='w-full'>
+                Join the Waitlist
+              </Button>
+            </Link>
           </div>
           <div className='hidden md:block absolute top-1/2 -right-[70%] md:-right-[550px] xl:-right-[35%] 2xl:-right-[300px] -translate-y-1/2 aspect-square z-[16] h-[90%]'>
             <Image
@@ -154,9 +157,9 @@ const InsightsTodayFindingTommorrowPage = () => {
               className='w-fit h-12 md:h-16 object-contain top-[-20px] relative'
               loading='lazy'
             />
-            <Button size='lg' className='mt-3'>
-              Join our Waitlist
-            </Button>
+            <Link href={'/contact-us'} className='block mt-3'>
+              <Button size='lg'>Join our Waitlist</Button>
+            </Link>
             <Image
               src={'/icons/arrow-bottom-left.svg'}
               alt='arrow'

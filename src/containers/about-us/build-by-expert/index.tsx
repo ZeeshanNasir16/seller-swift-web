@@ -1,4 +1,4 @@
-import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 import React from 'react';
 
 const BuildByExpert = () => {
@@ -9,17 +9,16 @@ const BuildByExpert = () => {
         <br />
         Backed by Experience.
       </h2>
-      <div className='grid md:grid-cols-2 gap-8 mx-auto md:max-w-[90%]'>
-        {/* <Image
-            src='/images/misc/build-by-expert.png'
-            alt='build-by-expert'
-            width={0}
-            height={0}
-            sizes='100%'
-            className='w-full h-full object-contain'
-          /> */}
-        <div className='h-full w-full rounded-lg bg-[#D9D9D9] aspect-video' />
-        <div className='space-y-8 py-6'>
+      <div className='grid md:grid-cols-2 gap-y-8 gap-x-20 mx-auto md:max-w-[90%] items-center'>
+        <Image
+          src='/images/misc/build-by-expert.png'
+          alt='build-by-expert'
+          width={0}
+          height={0}
+          sizes='100%'
+          className='w-full h-full object-contain rounded-lg overflow-hidden'
+        />
+        <div className='space-y-8 py-6 text-base xl:text-lg'>
           <p className='font-light'>
             Seller Swift was founded by seasoned leaders in eCommerce and
             fintech who set out to solve one of the biggest challenges online
@@ -32,7 +31,7 @@ const BuildByExpert = () => {
             data, funding, and decision intelligence work together to help
             sellers scale with confidence.
           </p>
-          <Button> Learn More on LinkedIn</Button>
+          {/* <Button> Learn More on LinkedIn</Button> */}
         </div>
       </div>
     </div>

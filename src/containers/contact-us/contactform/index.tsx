@@ -42,7 +42,7 @@ const ContactFormWrapper = () => {
             <p>Email Us</p>
             <p className='font-medium'>info@sellerswift.com</p>
           </div>
-          <div className='flex items-center gap-6 pt-6'>
+          {/* <div className='flex items-center gap-6 pt-6'>
             <Link href={`mailto:${app_config.facebook}`}>
               <Image
                 src={'/images/social/facebook-alt.svg'}
@@ -98,7 +98,7 @@ const ContactFormWrapper = () => {
                 loading='lazy'
               />
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
       <ContactUsForm />

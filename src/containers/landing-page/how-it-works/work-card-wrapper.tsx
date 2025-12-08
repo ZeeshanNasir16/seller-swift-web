@@ -11,7 +11,7 @@ const WorkCardWrapper = ({
   return (
     <div
       className={cn(
-        'relative rounded-xl border border-white/10 px-6 md:px-8 xl:px-12 py-8 md:py-12 z-10 backdrop-blur-md overflow-hidden',
+        'relative rounded-xl border border-white/10 px-6 md:px-8 xl:px-12 py-8 md:py-12 z-20 backdrop-blur-md overflow-hidden',
         className
       )}
     >

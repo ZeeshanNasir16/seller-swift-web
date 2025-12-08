@@ -3,7 +3,7 @@ import React from 'react';
 
 const InsightCard = ({ icon, title }: { icon: string; title: string }) => {
   return (
-    <div className='rounded-lg p-6 xl:p-10 text-center space-y-6 bg-[#2f2f31] text-foreground'>
+    <div className='rounded-lg p-6 xl:p-10 text-center space-y-6 bg-[#2f2f31] text-foreground hover:bg-gradient-to-r hover:from-primary hover:to-secondary hover:text-white transition-all duration-500'>
       <Image
         src={icon}
         alt={title}
