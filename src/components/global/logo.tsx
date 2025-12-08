@@ -15,26 +15,32 @@ const Logo = ({
   return isIcon ? (
     <Image
       src={
-        withText ? '/images/logo/logo-with-text.png' : '/images/logo/logo.png'
+        withText ? '/images/logo/logo-with-text.svg' : '/images/logo/logo.png'
       }
       alt='logo'
       width={0}
       height={0}
       sizes='100%'
-      className={cn('w-fit h-10 object-contain', className)}
+      className={cn(
+        withText ? 'w-fit h-6' : 'w-fit h-10 object-contain',
+        className
+      )}
       loading='eager'
     />
   ) : (
     <Link href='/'>
       <Image
         src={
-          withText ? '/images/logo/logo-with-text.png' : '/images/logo/logo.png'
+          withText ? '/images/logo/logo-with-text.svg' : '/images/logo/logo.png'
         }
         alt='logo'
         width={0}
         height={0}
         sizes='100%'
-        className={cn('w-fit h-10 object-contain', className)}
+        className={cn(
+          withText ? 'w-fit h-6' : 'w-fit h-10 object-contain',
+          className
+        )}
         loading='eager'
       />
     </Link>

@@ -4,11 +4,11 @@ import React from 'react';
 const PrivacyPolicyPage = () => {
   return (
     <>
-      <section className='relative hero-top-padding bg-background text-foreground pb-40'>
+      <section className='relative overflow-hidden'>
         <div className='hero-bg-gradient-light-secondary' />
         <div className='hero-bg-gradient-light-secondary-overlay' />
-        <div className='relative z-20 section-padding-x section-max-width'>
-          <div className='w-full sm:max-w-[75%] md:max-w-[690px] space-y-8'>
+        <div className='relative z-20 section-padding-x section-max-width overflow-visible hero-padding'>
+          <div className='w-full space-y-6 md:space-y-10 md:max-w-[500px] lg:max-w-fit'>
             <h2 className='heading-1-secondary text-gradient-tertiary-light'>
               Privacy
               <br />
@@ -23,14 +23,14 @@ const PrivacyPolicyPage = () => {
               </p>
             </div>
           </div>
-          <div className='absolute top-1/2 -right-[370px] md:-right-[300px] lg:-right-[200px] -translate-y-1/2 aspect-square z-[16]'>
+          <div className='hidden md:block absolute top-1/2 -right-[70%] md:-right-[550px] xl:-right-[20%] 2xl:-right-[300px] -translate-y-1/2 aspect-square z-[16] h-[80%]'>
             <Image
               src='/images/gradients/cube-absrtract.png'
               alt='circle-glass'
-              width={450}
-              height={450}
+              width={350}
+              height={350}
               sizes='100%'
-              className='abstract-side-image-header'
+              className='object-contain w-full h-full'
               loading='lazy'
             />
           </div>

@@ -75,10 +75,33 @@
     @apply font-primary;
     overflow-x: hidden;
   }
+
+  :root {
+    scrollbar-color: #c0c0c0 #f1f1f1;
+    scrollbar-width: thin;
+  }
+
+  *::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: #c0c0c0;
+    border-radius: 9999px;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background: #a0a0a0;
+  }
 }
 
-.hero-top-padding {
-  @apply pt-40;
+.hero-padding {
+  @apply pt-28 pb-10 md:pt-40 lg:pb-28;
 }
 
 .section-padding-x {
@@ -86,7 +109,7 @@
 }
 
 .section-max-width {
-  @apply w-full xl:w-[80%] max-w-[2200px] mx-auto;
+  @apply w-full xl:w-[90%] max-w-[2200px] mx-auto;
 }
 
 .text-gradient-primary {
@@ -107,7 +130,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-.text-gradient-secondary-dark { 
+.text-gradient-secondary-dark {
   background: linear-gradient(151deg, #8C45FF 0%, #000000 25%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -127,7 +150,7 @@
 }
 
 .heading-1-secondary {
-  @apply text-6xl sm:text-7xl md:text-8xl 2xl:text-[122px] leading-[0.8] tracking-tight;
+  @apply text-7xl md:text-8xl lg:text-[122px] leading-none tracking-tight;
   font-family: var(--font-mona-sans);
   font-weight: 500;
 }
@@ -151,17 +174,17 @@
 }
 
 .abstract-side-image {
-  @apply w-[370px] h-[370px] 2xl:w-[450px] 2xl:h-[450px] aspect-square object-cover
+  @apply w-[370px] h-[370px] 2xl:w-[450px] 2xl:h-[450px] aspect-square object-contain
 }
 
 .abstract-side-image-header {
-  @apply w-[370px] h-[370px] md:w-[450px] md:h-[450px] 2xl:w-[550px] 2xl:h-[550px] aspect-square object-cover
+  @apply w-[370px] h-[370px] md:w-[450px] md:h-[450px] xl:w-[550px] xl:h-[550px] aspect-square object-cover
 }
 
 
 /* gradient styles */
 .hero-bg-gradient-light-secondary {
-  background: linear-gradient(45deg, #5b2c83 70%, #7c3aed 80%, #ffffff 90%);
+  background: linear-gradient(60deg, #5b2c83 75%, #7c3aed 89%, #ffffff 100%);
   position: absolute;
   z-index: 13;
   pointer-events: none;
@@ -173,7 +196,8 @@
   inset: 0;
   z-index: 14;
   pointer-events: none;
-  background: radial-gradient(ellipse at 35% 100%, rgba(0, 0, 0, 1) 50%, transparent 100%);
+  background: radial-gradient(ellipse at -100% 100%, rgba(0, 0, 0, 1) 68%, transparent 100%);
+  /* background: radial-gradient(ellipse at 35% 100%, rgba(0, 0, 0, 1) 50%, transparent 100%); */
 }
 
 

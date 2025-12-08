@@ -5,8 +5,8 @@ import './styles.css';
 
 const LandingHeroSection = () => {
   return (
-    <div className='relative hero-top-padding h-full min-h-[100dvh] overflow-y-hidden'>
-      <div className='section-padding-x space-y-8 z-40 relative py-6 md:py-9'>
+    <div className='relative h-full min-h-[100dvh] overflow-y-hidden hero-padding !pb-0'>
+      <div className='section-padding-x space-y-8 z-40 relative'>
         <h2 className='heading-1 text-center'>
           Smarter Decisions. <br /> Faster Growth.
         </h2>

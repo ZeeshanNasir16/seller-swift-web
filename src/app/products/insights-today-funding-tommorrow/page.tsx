@@ -1,9 +1,5 @@
-import { FooterGradientbg } from '@/components/gradients/footer-bg';
 import { Button } from '@/components/ui/button';
-import {
-  whyChooseSellerSwift,
-  whyUs,
-} from '@/containers/landing-page/why-seller-swift/data';
+import { whyChooseSellerSwift } from '@/containers/landing-page/why-seller-swift/data';
 import WhyBenefitCard from '@/containers/landing-page/why-seller-swift/why-benefit-card';
 import { howItWorks } from '@/containers/products/how-it-works/data';
 import HowItWorksCard from '@/containers/products/how-it-works/how-it-works-card';
@@ -14,11 +10,11 @@ import React from 'react';
 const InsightsTodayFindingTommorrowPage = () => {
   return (
     <>
-      <section className='relative hero-top-padding bg-background text-foreground pb-40'>
+      <section className='relative overflow-hidden'>
         <div className='hero-bg-gradient-light-secondary' />
         <div className='hero-bg-gradient-light-secondary-overlay' />
-        <div className='relative z-20 section-padding-x section-max-width'>
-          <div className='w-full space-y-6'>
+        <div className='relative z-20 section-padding-x section-max-width overflow-visible hero-padding'>
+          <div className='w-full space-y-6 md:space-y-10 md:max-w-[500px] lg:max-w-fit'>
             <h2 className='heading-1-secondary text-gradient-tertiary-light w-full'>
               Insights
               <br />
@@ -30,22 +26,24 @@ const InsightsTodayFindingTommorrowPage = () => {
               Access working capital faster — powered by your own performance
               data and the Seller Swift ecosystem built for intelligent growth.
             </p>
-            <Button size='lg'>Join the Waitlist</Button>
+            <Button size='lg' className='w-full max-w-[450px]'>
+              Join the Waitlist
+            </Button>
           </div>
-          <div className='absolute top-1/2 -right-[370px] md:-right-[300px] lg:-right-[200px] xl:-right-[240px] -translate-y-1/2 aspect-square z-[16]'>
+          <div className='hidden md:block absolute top-1/2 -right-[70%] md:-right-[550px] xl:-right-[35%] 2xl:-right-[300px] -translate-y-1/2 aspect-square z-[16] h-[90%]'>
             <Image
-              src='/images/gradients/cube-absrtract.png'
+              src='/images/gradients/abstract-glass-sec.png'
               alt='circle-glass'
               width={350}
               height={350}
               sizes='100%'
-              className='abstract-side-image-header'
+              className='object-contain w-full h-full'
               loading='lazy'
             />
           </div>
         </div>
       </section>
-      <div className='relative bg-foreground text-background z-20'>
+      <div className='relative z-20'>
         <section className='relative py-20 z-20'>
           <div className='section-padding-x section-max-width relative z-20 space-y-12'>
             <div className='space-y-6'>

@@ -10,19 +10,19 @@ import '@/containers/products/styles.css';
 const SmarterDecisionsFasterGrowthPage = () => {
   return (
     <>
-      <section className='relative hero-top-padding pb-40'>
+      <section className='relative overflow-hidden'>
         <div className='hero-bg-gradient-light-secondary' />
         <div className='hero-bg-gradient-light-secondary-overlay' />
-        <div className='relative z-20 section-padding-x section-max-width'>
-          <div className='w-full space-y-6 lg:space-y-10'>
-            <h2 className='heading-1-secondary text-gradient-tertiary-light w-full'>
+        <div className='relative z-20 section-padding-x section-max-width overflow-visible hero-padding'>
+          <div className='w-full space-y-6 md:space-y-10 md:max-w-[500px] lg:max-w-fit'>
+            <h2 className='heading-1-secondary text-gradient-tertiary-light'>
               Smarter
               <br />
               Decisions
               <br />
               Faster Growth.
             </h2>
-            <p className='text-sm sm:text-base md:text-lg 2xl:text-xl max-w-[660px]'>
+            <p className='text-sm sm:text-base md:text-lg max-w-[660px]'>
               Intelligently transform your store data into real-time analytics,
               profit tracking, and personalized growth strategies to scale
               confidently
@@ -31,23 +31,23 @@ const SmarterDecisionsFasterGrowthPage = () => {
               Get Started Free
             </Button>
           </div>
-          <div className='absolute top-1/2 -right-[370px] md:-right-[300px] lg:-right-[200px] -translate-y-1/2 aspect-square z-[16]'>
+          <div className='hidden md:block absolute top-1/2 -right-[70%] md:-right-[350px] xl:-right-[20%] 2xl:-right-[300px] -translate-y-1/2 aspect-square z-[16] h-[80%]'>
             <Image
-              src='/images/gradients/cube-absrtract.png'
+              src='/images/gradients/circle-glass.png'
               alt='circle-glass'
               width={0}
               height={0}
               sizes='100%'
-              className='abstract-side-image-header'
+              className='object-contain w-full h-full'
               loading='lazy'
             />
           </div>
         </div>
       </section>
-      <div className='overflow-clip relative z-20'>
-        <section className='relative py-20 overflow-visible bg-foreground'>
+      <div className='relative z-20'>
+        <section className='relative py-10 md:py-20 overflow-visible'>
           <div className='section-padding-x section-max-width relative z-20 space-y-12'>
-            <h2 className='section-heading-1-secondary max-w-fit flex-shrink-0 text-center mx-auto text-background'>
+            <h2 className='section-heading-1-secondary max-w-fit flex-shrink-0 text-center mx-auto'>
               See What’s Driving
               <br />
               Your Growth
@@ -193,9 +193,20 @@ const SmarterDecisionsFasterGrowthPage = () => {
             </div>
           </div>
         </section>
-        <section className='relative z-20 overflow-clip -mt-px pb-20'>
+        <section className='relative z-20 overflow-clip -mt-px pb-10'>
+          <div className='absolute top-0 xl:left-[-170px] md:-left-[230px] left-[-300px] aspect-square z-[15]'>
+            <Image
+              src='/images/gradients/abstract-glass.png'
+              alt='circle-glass'
+              width={0}
+              height={0}
+              sizes='100%'
+              className='abstract-side-image rotate-[250deg]'
+              loading='lazy'
+            />
+          </div>
           <Testimonials />
-          <div className='absolute inset-[-2%_0%_-10%_0%] z-[12]'>
+          <div className='absolute inset-[-2%_0%_-15%_0%] z-[12]'>
             <Image
               src={'/images/gradients/gradient-4.png'}
               alt='img'

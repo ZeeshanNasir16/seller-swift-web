@@ -10,7 +10,7 @@ const OurVision = () => {
       </div>
       <div className='section-padding-x section-max-width '>
         <div className='space-y-12 relative mt-10 md:mt-24 md:w-[90%] mx-auto z-20'>
-          <div className='flex flex-col md:flex-row gap-6 md:items-center justify-between relative text-foreground '>
+          <div className='flex flex-col md:flex-row gap-6 md:items-start justify-between relative text-foreground '>
             <h2 className='section-heading-1-secondary max-w-fit flex-shrink-0 '>
               Our Vision
             </h2>
@@ -27,14 +27,14 @@ const OurVision = () => {
             </div>
           </div>
           <div className='relative w-full z-20'>
-            <div className='absolute top-1/2 -left-[200px] md:-left-[280px] -translate-y-1/2 aspect-square z-20'>
+            <div className='absolute top-[15%] -left-[200px] md:-left-[280px] xl:-left-[350px] -translate-y-1/2 aspect-square z-20'>
               <Image
                 src='/images/gradients/cube-absrtract.png'
                 alt='cube-abstract'
                 width={0}
                 height={0}
                 sizes='100%'
-                className='w-[250px] md:w-[350px] h-[250px] md:h-[350px] aspect-square object-contain'
+                className='abstract-side-image'
                 loading='lazy'
               />
             </div>

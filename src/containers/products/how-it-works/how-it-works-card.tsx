@@ -15,7 +15,7 @@ const HowItWorksCard = ({
   return (
     <div
       className={cn(
-        'bg-white z-20 relative rounded-2xl p-6 md:p-8 flex flex-col justify-between h-full gap-16',
+        'bg-foreground text-background z-20 relative rounded-2xl p-6 md:p-8 flex flex-col justify-between h-full gap-16',
         className
       )}
       style={{

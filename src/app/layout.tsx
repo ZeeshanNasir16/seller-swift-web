@@ -1,3 +1,6 @@
+import AppBgGraphics from '@/components/global/app-bg-graphic-lines';
+import Footer from '@/components/global/footer';
+import Navbar from '@/components/global/navbar';
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import './globals.css';
@@ -80,7 +83,14 @@ export default function RootLayout({
       <body
         className={`${monaSans.variable} ${monaSansExpanded.variable} antialiased relative`}
       >
-        {children}
+        <div className='bg-background text-foreground w-full'>
+          <AppBgGraphics />
+          <Navbar />
+          <main className='min-h-dvh z-20 w-full overflow-hidden'>
+            {children}
+          </main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

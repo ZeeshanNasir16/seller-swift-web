@@ -24,7 +24,7 @@ const OurValues = () => {
           alt='img'
           fill
           className='scale-y-[-1]'
-          
+          loading='eager'
         />
       </div>
       <div className='section-padding-x space-y-12 relative z-20 text-white max-w-screen-2xl mx-auto overflow-visible'>

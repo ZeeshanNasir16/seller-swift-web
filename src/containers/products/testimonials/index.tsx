@@ -28,13 +28,13 @@ const Testimonials = () => {
   const handlePrevious = () => api?.scrollTo(current - 1);
 
   return (
-    <div className='relative md:py-20 py-10'>
+    <div className='relative md:py-20 py-10 lg:w-[90%] mx-auto'>
       <div className='section-padding-x section-max-width relative z-20 text-white'>
         <h2 className='section-heading-1-secondary text-center mb-12'>
           Seller Swift Testimonials
         </h2>
-        <div className='max-w-[1680px] mx-auto grid md:grid-cols-[minmax(200px,20%)_1fr] lg:grid-cols-[minmax(300px,30%)_1fr] gap-12 h-fit'>
-          <div className='relative hidden md:block self-center'>
+        <div className='max-w-[1680px] mx-auto grid grid-cols-[auto_1fr] gap-12 h-fit'>
+          <div className='relative hidden md:block self-center min-w-[250px] xl:min-w-[300px]'>
             <div className='rounded-full border border-secondary relative aspect-square flex items-center justify-center'>
               <Image
                 src='/images/social/quote.svg'
@@ -46,7 +46,7 @@ const Testimonials = () => {
                 loading='eager'
               />
               <Image
-           src={testimonials[current].image}
+                src={testimonials[current].image}
                 alt='quote'
                 width={0}
                 height={0}
@@ -56,58 +56,56 @@ const Testimonials = () => {
               />
             </div>
           </div>
-          <div className='w-full flex'>
-            <div className='space-y-8 self-center'>
-              <p className='text-sm md:text-base text-primary uppercase font-medium'>
-                What They Say
-              </p>
-              <Carousel
-                className='w-full h-fit'
-                setApi={setApi}
-                opts={{ loop: false }}
-              >
-                <CarouselContent>
-                  {testimonials.map((testimonial, index) => {
-                    return (
-                      <CarouselItem
-                        className=' basis-full select-none flex items-end'
-                        key={index}
-                      >
-                        <p className='text-lg md:text-xl lg:text-[26px] font-medium font-secondary !leading-relaxed'>
-                          "{testimonial.comment}"
-                        </p>
-                      </CarouselItem>
-                    );
-                  })}
-                </CarouselContent>
-              </Carousel>
-              <div className='flex justify-between items-center'>
-                <div className='space-y-0.5'>
-                  <p className='text-sm md:text-base text-primary uppercase font-medium'>
-                    {testimonials[current].name}
-                  </p>
-                  <p className='text-base md:text-lg'>
-                    {testimonials[current].designation}
-                  </p>
-                </div>
-                <div className='flex items-center gap-4'>
-                  <Button
-                    size='icon'
-                    variant='outline'
-                    onClick={handlePrevious}
-                    className='w-12 h-12 xl:w-16 xl:h-16'
-                  >
-                    <ChevronLeft className='!size-4 xl:!size-5' />
-                  </Button>
-                  <Button
-                    size='icon'
-                    variant='outline'
-                    onClick={handleNext}
-                    className='w-12 h-12 xl:w-16 xl:h-16'
-                  >
-                    <ChevronRight className='!size-4 xl:!size-5' />
-                  </Button>
-                </div>
+          <div className='space-y-8 self-center'>
+            <p className='text-sm md:text-base text-primary uppercase font-medium'>
+              What They Say
+            </p>
+            <Carousel
+              className='w-auto h-fit'
+              setApi={setApi}
+              opts={{ loop: false }}
+            >
+              <CarouselContent>
+                {testimonials.map((testimonial, index) => {
+                  return (
+                    <CarouselItem
+                      className='basis-full select-none flex items-end'
+                      key={index}
+                    >
+                      <p className='text-lg md:text-xl xl:text-[26px] font-medium font-secondary !leading-relaxed'>
+                        "{testimonial.comment}"
+                      </p>
+                    </CarouselItem>
+                  );
+                })}
+              </CarouselContent>
+            </Carousel>
+            <div className='flex justify-between items-center'>
+              <div className='space-y-0.5'>
+                <p className='text-sm md:text-base text-primary uppercase font-medium'>
+                  {testimonials[current].name}
+                </p>
+                <p className='text-base md:text-lg'>
+                  {testimonials[current].designation}
+                </p>
+              </div>
+              <div className='flex items-center gap-4'>
+                <Button
+                  size='icon'
+                  variant='outline'
+                  onClick={handlePrevious}
+                  className='w-12 h-12 xl:w-16 xl:h-16'
+                >
+                  <ChevronLeft className='!size-4 xl:!size-5' />
+                </Button>
+                <Button
+                  size='icon'
+                  variant='outline'
+                  onClick={handleNext}
+                  className='w-12 h-12 xl:w-16 xl:h-16'
+                >
+                  <ChevronRight className='!size-4 xl:!size-5' />
+                </Button>
               </div>
             </div>
           </div>

@@ -12,7 +12,7 @@ import PrimaryHorizontalSeperator from './primary-horizontal-seperator';
 
 const Footer = () => {
   return (
-    <footer className='relative z-20 pb-8 md:pb-12 pt-20 text-white overflow-y-clip overflow-x-hidden'>
+    <footer className='relative z-20 pb-8 md:pb-12 pt-20 overflow-y-clip overflow-x-hidden'>
       <div className='absolute inset-[-16%_0%_-10%_0%]'>
         <Image
           src={'/images/gradients/gradient-6.png'}
@@ -28,7 +28,7 @@ const Footer = () => {
         <div className='grid sm:grid-cols-2 xl:grid-cols-[auto_1fr_auto] gap-x-16 gap-y-12 md:gap-y-20 items-start'>
           <div className='space-y-16'>
             <div className='space-y-6'>
-              <Logo withText className='h-12 md:h-16 xl:h-20' isIcon />
+              <Logo withText className='h-12 md:h-14' isIcon />
               <p className='max-w-[450px] xl:max-w-[312px] text-sm md:text-base xl:text-lg'>
                 Smarter Decisions. Faster Growth.
               </p>
