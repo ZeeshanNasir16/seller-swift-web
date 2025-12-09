@@ -21,7 +21,7 @@ const Sellers = () => {
             height={0}
             sizes='100%'
             className='w-fit h-full object-contain max-h-[53px]'
-            loading='eager'
+            priority
           />
         ))}
       </div>
@@ -30,11 +30,11 @@ const Sellers = () => {
 };
 
 const sellers = [
-  '/images/sellers/amazon.png',
-  '/images/sellers/stripe.png',
+  '/images/sellers/amazon.webp',
+  '/images/sellers/stripe.webp',
   '/images/sellers/persona.png',
-  '/images/sellers/stratique.jpg',
-  '/images/sellers/idb.png',
+  '/images/sellers/stratique.png',
+  '/images/sellers/idb.webp',
 ];
 
 export default Sellers;

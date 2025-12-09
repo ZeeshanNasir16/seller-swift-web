@@ -20,7 +20,7 @@ const OurValues = () => {
     <section className='relative pt-10 md:pt-20 pb-40'>
       <div className='absolute inset-[-5%_-5%_-10%_-3%] blur-2xl'>
         <Image
-          src={'/images/gradients/gradient-3.png'}
+          src={'/images/gradients/gradient-3.webp'}
           alt='img'
           fill
           className='scale-y-[-1]'
@@ -44,7 +44,7 @@ const OurValues = () => {
                   )}
                   key={item.id}
                 >
-                  <OurValuesCard {...item}/>
+                  <OurValuesCard {...item} />
                 </CarouselItem>
               ))}
             </CarouselContent>

@@ -12,17 +12,18 @@ const Logo = ({
   withText?: boolean;
   className?: string;
 }) => {
+  const logo_src = withText
+    ? '/icons/logo/logo-with-text.svg'
+    : '/icons/logo/logo.svg';
   return isIcon ? (
     <Image
-      src={
-        withText ? '/images/logo/logo-with-text.svg' : '/images/logo/logo.png'
-      }
+      src={logo_src}
       alt='logo'
       width={0}
       height={0}
       sizes='100%'
       className={cn(
-        withText ? 'w-fit h-6' : 'w-fit h-10 object-contain',
+        withText ? 'w-fit h-5' : 'w-fit h-10 object-contain',
         className
       )}
       loading='eager'
@@ -30,15 +31,13 @@ const Logo = ({
   ) : (
     <Link href='/'>
       <Image
-        src={
-          withText ? '/images/logo/logo-with-text.svg' : '/images/logo/logo.png'
-        }
+        src={logo_src}
         alt='logo'
         width={0}
         height={0}
         sizes='100%'
         className={cn(
-          withText ? 'w-fit h-6' : 'w-fit h-10 object-contain',
+          withText ? 'w-fit h-5' : 'w-fit h-10 object-contain',
           className
         )}
         loading='eager'

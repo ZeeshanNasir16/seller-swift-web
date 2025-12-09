@@ -1,6 +1,5 @@
 import { Button } from '@/components/ui/button';
 import { app_config } from '@/config';
-import { connectYourStore } from '@/containers/landing-page/how-it-works/data';
 import WorkCardWrapper from '@/containers/landing-page/how-it-works/work-card-wrapper';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -18,7 +17,7 @@ const HowItWorks = () => {
             <div className='inset-0 absolute aspect-square z-[11] bg-gradient-to-tr from-transparent via-transparent to-gray-400/15 w-full h-full' />
             <div className='relative w-full h-fit aspect-video'>
               <Image
-                src={'/images/misc/connect-store.png'}
+                src={'/images/misc/connect-store.webp'}
                 alt='seller-swift-logo'
                 width={0}
                 height={0}
@@ -41,7 +40,7 @@ const HowItWorks = () => {
             <div className='inset-0 absolute aspect-square bg-gradient-to-bl from-transparent via-transparent to-gray-400/15 h-full w-full' />
             <div className='relative w-full h-fit aspect-video'>
               <Image
-                src={'/images/misc/insights-chart.png'}
+                src={'/images/misc/insights-chart.webp'}
                 alt='seller-swift-logo'
                 width={0}
                 height={0}
@@ -78,7 +77,7 @@ const HowItWorks = () => {
                   </Link>
                 </div>
                 <Image
-                  src={'/images/misc/ai-chat.png'}
+                  src={'/images/misc/ai-chat.webp'}
                   alt='chat-1'
                   width={0}
                   height={0}
@@ -99,7 +98,7 @@ const HowItWorks = () => {
         </div>
         <div className='absolute top-0 -right-[340px] aspect-square z-20'>
           <Image
-            src='/images/gradients/circle-glass.png'
+            src='/images/gradients/circle-glass.webp'
             alt='circle-glass'
             width={0}
             height={0}

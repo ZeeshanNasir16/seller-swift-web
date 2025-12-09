@@ -18,7 +18,7 @@ const AICopilot = () => {
         </p>
         <div className='relative w-[80%] mx-auto'>
           <Image
-            src='/images/misc/app-panel-2.png'
+            src='/images/misc/app-panel-2.webp'
             alt='AI Co-Pilot Dashboard'
             width={1920}
             height={1080}
@@ -29,7 +29,7 @@ const AICopilot = () => {
         </div>
         <div className='absolute top-0 2xl:left-[-150px] xl:left-[-100px] md:-left-[250px] left-[-300px] aspect-square z-[15]'>
           <Image
-            src='/images/gradients/circle-glass.png'
+            src='/images/gradients/circle-glass.webp'
             alt='circle-glass'
             width={0}
             height={0}
@@ -68,7 +68,7 @@ const AICopilot = () => {
             />
             <div className='relative w-full'>
               <Image
-                src='/images/misc/link.svg'
+                src='/icons/misc/link.svg'
                 alt='link'
                 width={0}
                 height={0}
@@ -77,7 +77,7 @@ const AICopilot = () => {
                 loading='lazy'
               />
               <Image
-                src='/images/misc/link-mob.svg'
+                src='/icons/misc/link-mob.svg'
                 alt='link'
                 width={0}
                 height={0}
@@ -94,7 +94,7 @@ const AICopilot = () => {
           </div>
           <div className='absolute -top-[21rem] 2xl:right-[-330px] xl:right-[-270px] md:-right-[250px] right-[-290px] aspect-square z-[25]'>
             <Image
-              src='/images/gradients/abstract-glass.png'
+              src='/images/gradients/abstract-glass.webp'
               alt='abstract-glass'
               width={0}
               height={0}

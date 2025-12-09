@@ -5,9 +5,10 @@ import Testimonials from '@/containers/products/testimonials';
 import Image from 'next/image';
 import React from 'react';
 
+import { app_config } from '@/config';
+import InsightsToImpact from '@/containers/products/insights-to-impact.tsx';
 import '@/containers/products/styles.css';
 import Link from 'next/link';
-import { app_config } from '@/config';
 
 const SmarterDecisionsFasterGrowthPage = () => {
   return (
@@ -29,7 +30,10 @@ const SmarterDecisionsFasterGrowthPage = () => {
               profit tracking, and personalized growth strategies to scale
               confidently
             </p>
-            <Link href={app_config.panel} className='block w-full max-w-[450px]'>
+            <Link
+              href={app_config.panel}
+              className='block w-full max-w-[450px]'
+            >
               <Button size='lg' className='w-full'>
                 Get Started Free
               </Button>
@@ -37,7 +41,7 @@ const SmarterDecisionsFasterGrowthPage = () => {
           </div>
           <div className='hidden md:block absolute top-1/2 -right-[70%] md:-right-[350px] xl:-right-[20%] 2xl:-right-[300px] -translate-y-1/2 aspect-square z-[16] h-[80%]'>
             <Image
-              src='/images/gradients/circle-glass.png'
+              src='/images/gradients/circle-glass.webp'
               alt='circle-glass'
               width={0}
               height={0}
@@ -61,7 +65,7 @@ const SmarterDecisionsFasterGrowthPage = () => {
                 <GrowthCardWrapper>
                   <div className='space-y-1 md:space-y-4'>
                     <Image
-                      src='/images/misc/search.png'
+                      src='/images/misc/search.webp'
                       alt='search'
                       width={0}
                       height={0}
@@ -81,7 +85,7 @@ const SmarterDecisionsFasterGrowthPage = () => {
                 <GrowthCardWrapper>
                   <div className='space-y-1 md:space-y-4'>
                     <Image
-                      src='/images/misc/bot.png'
+                      src='/images/misc/bot.webp'
                       alt='search'
                       width={0}
                       height={0}
@@ -94,19 +98,19 @@ const SmarterDecisionsFasterGrowthPage = () => {
                     </h3>
                     <p
                       className='text-lg 2xl:text-xl 
-                 max-w-[50%] leading-tight'
+                 sm:max-w-[50%] leading-tight'
                     >
                       Get personalized recommendations on performance and
                       revenue optimization
                     </p>
                   </div>
                   <Image
-                    src='/images/misc/ai-chat-alt.png'
+                    src='/images/misc/ai-chat-alt.webp'
                     alt='ai-co-pilot'
                     width={0}
                     height={0}
                     sizes='100%'
-                    className='block absolute right-0 top-1/2 -translate-y-1/2 object-contain w-fit h-full max-w-[50%] ml-auto pr-10'
+                    className='hidden sm:block absolute right-0 top-1/2 -translate-y-1/2 object-contain w-fit h-full max-w-[50%] ml-auto pr-10'
                     loading='lazy'
                   />
                 </GrowthCardWrapper>
@@ -115,7 +119,7 @@ const SmarterDecisionsFasterGrowthPage = () => {
                 <GrowthCardWrapper>
                   <div className='space-y-1 md:space-y-4'>
                     <Image
-                      src='/images/misc/edit.png'
+                      src='/images/misc/edit.webp'
                       alt='edit'
                       width={0}
                       height={0}
@@ -126,25 +130,25 @@ const SmarterDecisionsFasterGrowthPage = () => {
                     <h3 className='text-2xl md:text-3xl 2xl:text-4xl font-semibold'>
                       Product Benchmarks
                     </h3>
-                    <p className='text-lg 2xl:text-xl max-w-[50%] leading-tight'>
+                    <p className='text-lg 2xl:text-xl sm:max-w-[50%] leading-tight'>
                       Compare product margins, sales velocity, and performance
                       across categories
                     </p>
                   </div>
                   <Image
-                    src='/images/misc/ai-insights.png'
+                    src='/images/misc/ai-insights.webp'
                     alt='ai-insights'
                     width={0}
                     height={0}
                     sizes='100%'
-                    className='absolute right-0 top-1/2 -translate-y-1/2 object-contain w-[40%] ml-auto h-full'
+                    className='hidden sm:block absolute right-0 top-1/2 -translate-y-1/2 object-contain w-[40%] ml-auto h-full'
                     loading='lazy'
                   />
                 </GrowthCardWrapper>
                 <GrowthCardWrapper>
-                  <div className='space-y-6'>
+                  <div className='space-y-1 md:space-y-4'>
                     <Image
-                      src='/images/misc/folder.png'
+                      src='/images/misc/folder.webp'
                       alt='folder'
                       width={0}
                       height={0}
@@ -165,42 +169,18 @@ const SmarterDecisionsFasterGrowthPage = () => {
           </div>
           <div className='absolute inset-0 z-[12]'>
             <Image
-              src={'/images/gradients/gradient-4.png'}
+              src={'/images/gradients/gradient-4.webp'}
               alt='img'
               fill
               loading='lazy'
             />
           </div>
         </section>
-        <section className='bg-background -mt-px'>
-          <div className='section-padding-x section-max-width relative z-20 space-y-12 py-10 md:py-20'>
-            <h2 className='section-heading-1-secondary text-center mb-12 text-foreground'>
-              Insights To Impact
-            </h2>
-            <div className='card-container'>
-              <InsightCard
-                title='Connect Your Store'
-                icon={'/images/why-us/customer-review.png'}
-              />
-              <InsightCard
-                title='Uncover Profit Insights'
-                icon={'/images/why-us/stack.png'}
-              />
-              <InsightCard
-                title='Optimize Opportunities'
-                icon={'/images/misc/stack-3.png'}
-              />
-              <InsightCard
-                title='Accelerate Growth'
-                icon={'/images/misc/take-action.png'}
-              />
-            </div>
-          </div>
-        </section>
+        <InsightsToImpact />
         <section className='relative z-20 overflow-clip -mt-px pb-10'>
-          <div className='absolute top-0 xl:left-[-170px] md:-left-[230px] left-[-300px] aspect-square z-[15]'>
+          <div className='hidden md:block absolute top-0 xl:left-[-170px] md:-left-[230px] left-[-300px] aspect-square z-[15]'>
             <Image
-              src='/images/gradients/abstract-glass.png'
+              src='/images/gradients/abstract-glass.webp'
               alt='circle-glass'
               width={0}
               height={0}
@@ -210,15 +190,6 @@ const SmarterDecisionsFasterGrowthPage = () => {
             />
           </div>
           <Testimonials />
-          <div className='absolute inset-[-2%_0%_-15%_0%] z-[12]'>
-            <Image
-              src={'/images/gradients/gradient-4.png'}
-              alt='img'
-              className='scale-y-[-1]'
-              fill
-              loading='lazy'
-            />
-          </div>
         </section>
       </div>
     </>

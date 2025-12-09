@@ -24,7 +24,7 @@ const OurVision = () => {
         <div className='relative w-full z-20'>
           <div className='absolute top-1/2 -left-[200px] md:-left-[280px] -translate-y-1/2 aspect-square z-20'>
             <Image
-              src='/images/gradients/cube-absrtract.png'
+              src='/images/gradients/cube-absrtract.webp'
               alt='cube-abstract'
               width={0}
               height={0}
@@ -34,7 +34,7 @@ const OurVision = () => {
             />
           </div>
           <Image
-            src='/images/misc/app-panel-2.png'
+            src='/images/misc/app-panel-2.webp'
             alt='why-swift'
             width={0}
             height={0}

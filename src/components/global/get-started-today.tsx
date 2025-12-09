@@ -21,7 +21,7 @@ const GetStartedToday = () => {
       </div>
       <div className='block flex-1 flex-shrink'>
         <Image
-          src={'/images/misc/get-started-graph.png'}
+          src={'/images/misc/get-started-graph.webp'}
           alt='get-started-today'
           width={0}
           height={0}

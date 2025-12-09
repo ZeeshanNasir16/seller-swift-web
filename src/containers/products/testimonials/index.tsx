@@ -33,11 +33,11 @@ const Testimonials = () => {
         <h2 className='section-heading-1-secondary text-center mb-12'>
           Seller Swift Testimonials
         </h2>
-        <div className='max-w-[1680px] mx-auto grid grid-cols-[auto_1fr] gap-12 h-fit'>
-          <div className='relative hidden md:block self-center min-w-[250px] xl:min-w-[300px]'>
+        <div className='max-w-[1680px] mx-auto grid grid-cols-[auto_1fr] md:gap-8 lg:gap-12 h-fit'>
+          <div className='relative hidden md:block self-center min-w-[230px] xl:min-w-[300px] 2xl:min-w-[350px]'>
             <div className='rounded-full border border-secondary relative aspect-square flex items-center justify-center'>
               <Image
-                src='/images/social/quote.svg'
+                src='/icons/misc/quote.svg'
                 alt='quote'
                 width={0}
                 height={0}
@@ -56,23 +56,23 @@ const Testimonials = () => {
               />
             </div>
           </div>
-          <div className='space-y-8 self-center'>
+          <div className='space-y-8 self-center min-w-0 overflow-visible'>
             <p className='text-sm md:text-base text-primary uppercase font-medium'>
               What They Say
             </p>
             <Carousel
-              className='w-auto h-fit'
+              className='w-full h-fit'
               setApi={setApi}
               opts={{ loop: false }}
             >
-              <CarouselContent>
+              <CarouselContent className='-ml-0'>
                 {testimonials.map((testimonial, index) => {
                   return (
                     <CarouselItem
-                      className='basis-full select-none flex items-end'
+                      className='basis-full select-none pl-0'
                       key={index}
                     >
-                      <p className='text-lg md:text-xl xl:text-[26px] font-medium font-secondary !leading-relaxed'>
+                      <p className='text-lg lg:text-xl xl:text-[26px] font-medium font-secondary !leading-relaxed'>
                         "{testimonial.comment}"
                       </p>
                     </CarouselItem>
@@ -81,20 +81,31 @@ const Testimonials = () => {
               </CarouselContent>
             </Carousel>
             <div className='flex justify-between items-center'>
-              <div className='space-y-0.5'>
-                <p className='text-sm md:text-base text-primary uppercase font-medium'>
-                  {testimonials[current].name}
-                </p>
-                <p className='text-base md:text-lg'>
-                  {testimonials[current].designation}
-                </p>
+              <div className='flex items-center gap-3'>
+                <Image
+                  src={testimonials[current].image}
+                  alt='quote'
+                  width={0}
+                  height={0}
+                  sizes='100%'
+                  className='w-12 h-12 object-cover object-top-center rounded-full aspect-square md:hidden'
+                  loading='eager'
+                />
+                <div className='space-y-0.5'>
+                  <p className='text-xs sm:text-sm md:text-base text-primary uppercase font-medium'>
+                    {testimonials[current].name}
+                  </p>
+                  <p className='sm:text-base md:text-lg'>
+                    {testimonials[current].designation}
+                  </p>
+                </div>
               </div>
               <div className='flex items-center gap-4'>
                 <Button
                   size='icon'
                   variant='outline'
                   onClick={handlePrevious}
-                  className='w-12 h-12 xl:w-16 xl:h-16'
+                  className='w-10 h-10 xl:w-16 xl:h-16'
                 >
                   <ChevronLeft className='!size-4 xl:!size-5' />
                 </Button>
@@ -102,7 +113,7 @@ const Testimonials = () => {
                   size='icon'
                   variant='outline'
                   onClick={handleNext}
-                  className='w-12 h-12 xl:w-16 xl:h-16'
+                  className='w-10 h-10 xl:w-16 xl:h-16'
                 >
                   <ChevronRight className='!size-4 xl:!size-5' />
                 </Button>

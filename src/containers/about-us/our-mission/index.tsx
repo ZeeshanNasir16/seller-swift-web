@@ -7,7 +7,7 @@ const OurMission = () => {
       <div className='grid lg:grid-cols-[minmax(350px,auto)_minmax(250px,auto)] gap-x-16 lg:gap-x-24 gap-y-6 md:gap-y-10 items-center'>
         <div className=' aspect-video z-20'>
           <Image
-            src='/images/misc/our-mission.png'
+            src='/images/misc/our-mission.webp'
             alt='our-mission'
             width={0}
             height={0}

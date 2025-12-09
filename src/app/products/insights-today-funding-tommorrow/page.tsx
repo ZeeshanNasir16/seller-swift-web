@@ -35,7 +35,7 @@ const InsightsTodayFindingTommorrowPage = () => {
           </div>
           <div className='hidden md:block absolute top-1/2 -right-[70%] md:-right-[550px] xl:-right-[35%] 2xl:-right-[300px] -translate-y-1/2 aspect-square z-[16] h-[90%]'>
             <Image
-              src='/images/gradients/abstract-glass-sec.png'
+              src='/images/gradients/abstract-glass-sec.webp'
               alt='circle-glass'
               width={350}
               height={350}
@@ -73,7 +73,7 @@ const InsightsTodayFindingTommorrowPage = () => {
         <section className='relative z-[19] text-white overflow-visible'>
           <div className='absolute inset-[-70%_0%_0%_0%] z-[12]'>
             <Image
-              src={'/images/gradients/gradient-4.png'}
+              src={'/images/gradients/gradient-4.webp'}
               alt='img'
               fill
               loading='lazy'
@@ -149,7 +149,7 @@ const InsightsTodayFindingTommorrowPage = () => {
           </p>
           <div className='flex relative items-start gap-8 justify-center'>
             <Image
-              src={'/icons/arrow-bottom-right.svg'}
+              src={'/icons/misc/arrow-bottom-right.svg'}
               alt='arrow'
               width={0}
               height={0}
@@ -161,7 +161,7 @@ const InsightsTodayFindingTommorrowPage = () => {
               <Button size='lg'>Join our Waitlist</Button>
             </Link>
             <Image
-              src={'/icons/arrow-bottom-left.svg'}
+              src={'/icons/misc/arrow-bottom-left.svg'}
               alt='arrow'
               width={0}
               height={0}
@@ -176,7 +176,7 @@ const InsightsTodayFindingTommorrowPage = () => {
           </p>
           <div className='relative w-[80%] mx-auto'>
             <Image
-              src='/images/misc/app-panel-2.png'
+              src='/images/misc/app-panel-2.webp'
               alt='round-eclipse'
               width={0}
               height={0}
@@ -187,7 +187,7 @@ const InsightsTodayFindingTommorrowPage = () => {
           </div>
           <div className='absolute top-0 xl:left-[-170px] md:-left-[230px] left-[-300px] aspect-square z-[15]'>
             <Image
-              src='/images/gradients/abstract-glass.png'
+              src='/images/gradients/abstract-glass.webp'
               alt='circle-glass'
               width={0}
               height={0}
@@ -199,7 +199,7 @@ const InsightsTodayFindingTommorrowPage = () => {
         </div>
         <div className='absolute inset-[0%_0%_0%_0%] z-[12]'>
           <Image
-            src={'/images/gradients/gradient-4.png'}
+            src={'/images/gradients/gradient-4.webp'}
             alt='img'
             fill
             className='scale-y-[-1]'

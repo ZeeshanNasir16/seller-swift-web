@@ -1,7 +1,10 @@
+'use client';
 import LinkButton from '@/components/global/link-button';
 import Logo from '@/components/global/logo';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
+import { app_config } from '@/config';
+import buildMailto from '@/lib/mail';
 import { CircleCheck, Mail } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -10,11 +13,21 @@ import GetStartedToday from './get-started-today';
 import PrimaryHorizontalSeperator from './primary-horizontal-seperator';
 
 const Footer = () => {
+  function handleMailto(e: React.MouseEvent) {
+    e.preventDefault(); // no routing
+    if (typeof window !== 'undefined')
+      window.open(
+        buildMailto(app_config.email, {
+          subject: 'Enquiries',
+        }),
+        '_self' // use OS handler in same tab
+      );
+  }
   return (
-    <footer className='relative z-20 pb-8 md:pb-12 pt-20 overflow-y-clip overflow-x-hidden'>
+    <footer className='relative z-20 pb-8 md:pb-12 overflow-y-clip overflow-x-hidden'>
       <div className='absolute inset-[-16%_0%_-10%_0%]'>
         <Image
-          src={'/images/gradients/gradient-6.png'}
+          src={'/images/gradients/gradient-6.webp'}
           alt='img'
           fill
           className=''
@@ -26,7 +39,7 @@ const Footer = () => {
       <div className='pt-12 md:pt-24 section-max-width section-padding-x space-y-8 overflow-visible relative z-20'>
         <div className='grid sm:grid-cols-2 xl:grid-cols-[auto_1fr_auto] gap-x-16 gap-y-12 md:gap-y-20 items-start'>
           <div className='space-y-6'>
-            <Logo withText className='h-12 md:h-14' isIcon />
+            <Logo withText className='h-10 md:h-12' isIcon />
             <p className='max-w-[450px] xl:max-w-[312px] text-sm md:text-base xl:text-lg'>
               Smarter Decisions. Faster Growth.
             </p>
@@ -34,7 +47,7 @@ const Footer = () => {
               <Button>Request a Demo</Button>
             </Link>
           </div>
-          <div className='flex flex-col sm:flex-row gap-6 md:gap-16 sm:max-w-[350px] sm:ml-auto'>
+          <div className='flex flex-col sm:flex-row gap-6 md:gap-16 sm:max-w-[500px] sm:ml-auto'>
             {footerLinks.map((link) => (
               <div key={link.id} className='space-y-1.5 md:space-y-3'>
                 <p className='text-base md:text-lg xl:text-xl text-secondary font-semibold'>
@@ -60,9 +73,12 @@ const Footer = () => {
                 Join our mailing list for the latest insights, updates, and
                 growth strategies
               </p>
-              <div className='flex items-center gap-3'>
+              <div
+                className='flex items-center gap-3 cursor-pointer'
+                onClick={handleMailto}
+              >
                 <Mail className='size-4' />
-                <p className='text-sm xl:text-base'>ersadwork@gmail.com</p>
+                <p className='text-sm xl:text-base'>{app_config.email}</p>
               </div>
             </div>
             <Separator className='bg-white hidden xl:block' />
@@ -91,24 +107,20 @@ const Footer = () => {
 };
 
 const footerLinks = [
-  // {
-  //   id: 'footer-contact-us',
-  //   label: 'Contact Us',
-  //   links: [
-  //     {
-  //       label: 'Insights',
-  //       href: '/',
-  //     },
-  //     {
-  //       label: 'Advance',
-  //       href: '/',
-  //     },
-  //     {
-  //       label: 'Ai Co-Pilot',
-  //       href: '/',
-  //     },
-  //   ],
-  // },
+  {
+    id: 'footer-products',
+    label: 'Products',
+    links: [
+      {
+        label: 'Insights',
+        href: '/products/smarter-decisions-faster-growth',
+      },
+      {
+        label: 'Advance',
+        href: '/products/insights-today-funding-tommorrow',
+      },
+    ],
+  },
   {
     id: 'footer-help',
     label: 'Company',

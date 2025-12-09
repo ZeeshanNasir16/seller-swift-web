@@ -20,7 +20,7 @@ const WhySellerSwift = () => {
         <div className='relative w-full'>
           <div className='absolute top-1/2 -left-[200px] md:-left-[220px] xl:-left-[340px] -translate-y-1/2 aspect-square z-20'>
             <Image
-              src='/images/gradients/cube-absrtract.png'
+              src='/images/gradients/cube-absrtract.webp'
               alt='cube-abstract'
               width={0}
               height={0}
@@ -30,7 +30,7 @@ const WhySellerSwift = () => {
             />
           </div>
           <Image
-            src='/images/misc/why-swift.png'
+            src='/images/misc/why-swift.webp'
             alt='why-swift'
             width={0}
             height={0}

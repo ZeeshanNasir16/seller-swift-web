@@ -36,7 +36,7 @@ const Testimonials = () => {
         <div className='relative hidden md:block self-center'>
           <div className='rounded-full border border-secondary relative aspect-square flex items-center justify-center'>
             <Image
-              src='/images/social/quote.svg'
+              src='/icons/misc/quote.svg'
               alt='quote'
               width={0}
               height={0}

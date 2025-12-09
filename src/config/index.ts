@@ -1,5 +1,5 @@
 export const app_config = {
-  email: 'support@swift-seller.com',
+  email: 'ersadwork@gmail.com',
   phone: '',
   address: '',
   country: '',

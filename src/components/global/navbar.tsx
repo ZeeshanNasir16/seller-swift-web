@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <nav className='absolute top-4 md:top-8 left-0 right-0 z-50 w-full max-w-[840px] xl:max-w-[900px] mx-auto inline-flex justify-center px-6'>
       <div className='w-full backdrop-blur-sm bg-[#020202]/15 text-white border border-white/15 rounded-sm inline-flex justify-between gap-6 items-center p-3 md:p-4'>
-        <Logo className='h-8 md:h-10 flex-shrink-0' />
+        <Logo className='h-8 flex-shrink-0' />
         <div className='items-center gap-6 hidden md:inline-flex'>
           <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
             <DropdownMenuTrigger className='flex items-center gap-1.5'>
@@ -37,7 +37,7 @@ const Navbar = () => {
                   href='/products/smarter-decisions-faster-growth'
                   onClick={() => setIsOpen(false)}
                 >
-                  Advance
+                  Insights
                 </LinkButton>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
@@ -45,7 +45,7 @@ const Navbar = () => {
                   href='/products/insights-today-funding-tommorrow'
                   onClick={() => setIsOpen(false)}
                 >
-                  Insights
+                  Advance
                 </LinkButton>
               </DropdownMenuItem>
             </DropdownMenuContent>

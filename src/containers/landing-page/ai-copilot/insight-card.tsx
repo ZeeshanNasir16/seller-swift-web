@@ -19,7 +19,7 @@ const InsightCard = ({
       }}
     >
       <Image
-        src={'/images/misc/graph.png'}
+        src={'/images/misc/graph.webp'}
         alt={title}
         width={0}
         height={0}

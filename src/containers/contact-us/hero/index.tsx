@@ -20,7 +20,7 @@ const ContactUsHero = () => {
         </div>
         <div className='hidden md:block absolute top-1/2 -right-[70%] md:-right-[550px] xl:-right-[20%] 2xl:-right-[300px] -translate-y-1/2 aspect-square z-[16] h-[80%]'>
           <Image
-            src='/images/gradients/cube-absrtract.png'
+            src='/images/gradients/cube-absrtract.webp'
             alt='circle-glass'
             width={350}
             height={350}

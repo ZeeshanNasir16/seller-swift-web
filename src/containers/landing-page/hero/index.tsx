@@ -29,7 +29,7 @@ const LandingHeroSection = () => {
         </div>
       </div>
       <Image
-        src='/images/misc/app-panel-1.png'
+        src='/images/misc/app-panel-1.webp'
         alt='round-eclipse'
         width={1920}
         height={1080}
@@ -41,7 +41,7 @@ const LandingHeroSection = () => {
       <div className='round-eclipse-overlay' />
       <div className='absolute top-[60%] -translate-y-1/2 z-[14]'>
         <Image
-          src='/images/misc/twist.png'
+          src='/images/misc/twist.webp'
           alt='round-eclipse'
           width={0}
           height={0}

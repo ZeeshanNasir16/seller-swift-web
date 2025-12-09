@@ -6,7 +6,7 @@ const OurVision = () => {
   return (
     <section className='relative'>
       <div className='absolute inset-[-20%_-5%_-3%_-5%] blur-2xl'>
-        <Image src={'/images/gradients/gradient-3.png'} alt='img' fill />
+        <Image src={'/images/gradients/gradient-3.webp'} alt='img' fill />
       </div>
       <div className='section-padding-x section-max-width '>
         <div className='space-y-12 relative mt-10 md:mt-24 md:w-[90%] mx-auto z-20'>
@@ -29,7 +29,7 @@ const OurVision = () => {
           <div className='relative w-full z-20'>
             <div className='absolute top-[15%] -left-[200px] md:-left-[280px] xl:-left-[350px] -translate-y-1/2 aspect-square z-20'>
               <Image
-                src='/images/gradients/cube-absrtract.png'
+                src='/images/gradients/cube-absrtract.webp'
                 alt='cube-abstract'
                 width={0}
                 height={0}
@@ -39,7 +39,7 @@ const OurVision = () => {
               />
             </div>
             <Image
-              src='/images/misc/app-panel-2.png'
+              src='/images/misc/app-panel-2.webp'
               alt='why-swift'
               width={0}
               height={0}

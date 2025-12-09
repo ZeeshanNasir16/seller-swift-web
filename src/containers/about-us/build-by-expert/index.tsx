@@ -11,7 +11,7 @@ const BuildByExpert = () => {
       </h2>
       <div className='grid md:grid-cols-2 gap-y-8 gap-x-20 mx-auto md:max-w-[90%] items-center'>
         <Image
-          src='/images/misc/build-by-expert.png'
+          src='/images/misc/build-by-expert.webp'
           alt='build-by-expert'
           width={0}
           height={0}

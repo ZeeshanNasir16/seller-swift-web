@@ -1,6 +1,6 @@
 /* Gradient replacements for gradient images */
 
-/* Replace gradient-3.png */
+/* Replace gradient-3.webp */
 .gradient-bg-3 {
     background: radial-gradient(ellipse at center,
             rgba(139, 92, 246, 0.25) 0%,
@@ -11,7 +11,7 @@
     z-index: 12;
 }
 
-/* Replace gradient-4.png */
+/* Replace gradient-4.webp */
 .gradient-bg-4 {
     background: radial-gradient(ellipse at 50% 30%,
             rgba(139, 92, 246, 0.2) 0%,
@@ -22,7 +22,7 @@
     z-index: 12;
 }
 
-/* Replace gradient-6.png (footer) */
+/* Replace gradient-6.webp (footer) */
 .gradient-bg-footer {
     background: radial-gradient(ellipse at 50% 0%,
             rgba(139, 92, 246, 0.3) 0%,

@@ -10,7 +10,7 @@ const ContactFormWrapper = () => {
       <div className='pr-16 relative space-y-20'>
         <div className='flex items-center gap-6'>
           <Image
-            src='/images/misc/eclipse.png'
+            src='/images/misc/eclipse.webp'
             alt='email-icon'
             width={0}
             height={0}
@@ -45,7 +45,7 @@ const ContactFormWrapper = () => {
           {/* <div className='flex items-center gap-6 pt-6'>
             <Link href={`mailto:${app_config.facebook}`}>
               <Image
-                src={'/images/social/facebook-alt.svg'}
+                src={'/icons/social/facebook.svg'}
                 alt='facebook'
                 width={0}
                 height={0}
@@ -56,7 +56,7 @@ const ContactFormWrapper = () => {
             </Link>
             <Link href={`mailto:${app_config.instagram}`}>
               <Image
-                src={'/images/social/instagram-alt.svg'}
+                src={'/icons/social/instagram.svg'}
                 alt='instagram'
                 width={0}
                 height={0}
@@ -67,7 +67,7 @@ const ContactFormWrapper = () => {
             </Link>
             <Link href={`mailto:${app_config.linkedin}`}>
               <Image
-                src={'/images/social/linkedin-alt.svg'}
+                src={'/icons/social/linkedin.svg'}
                 alt='linkedin'
                 width={0}
                 height={0}
@@ -78,7 +78,7 @@ const ContactFormWrapper = () => {
             </Link>
             <Link href={`mailto:${app_config.youtube}`}>
               <Image
-                src={'/images/social/youtube-alt.svg'}
+                src={'/icons/social/youtube.svg'}
                 alt='youtube'
                 width={0}
                 height={0}
@@ -89,7 +89,7 @@ const ContactFormWrapper = () => {
             </Link>
             <Link href={`mailto:${app_config.tiktok}`}>
               <Image
-                src={'/images/social/tiktok-alt.svg'}
+                src={'/icons/social/tiktok.svg'}
                 alt='tiktok'
                 width={0}
                 height={0}
